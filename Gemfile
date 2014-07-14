@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 gem 'sqlite3'
 gem 'devise'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'tzinfo'
+
 
 # frontend
 gem 'slim-rails'
