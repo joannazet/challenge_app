@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_action :set_question, only: [:show, :edit, :update, :destroy]
-
+ 
   def index
     @questions = Question.all
   end
@@ -20,7 +20,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     @question.user = current_user
-
+  
     if @question.save
       redirect_to @question, notice: 'Question was successfully created.'
     else

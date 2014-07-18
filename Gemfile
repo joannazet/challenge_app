@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'tzinfo'
+gem 'carrierwave'
 
 
 # frontend
